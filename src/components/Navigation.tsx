@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronRight, Home } from 'lucide-react';
 import { Dropdown } from './Dropdown';
 
 interface NavigationProps {
@@ -56,6 +56,18 @@ export function Navigation({ isMenuOpen, setIsMenuOpen, scrollToSection }: Navig
       {/* Mobile menu */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-900 shadow-lg border-t border-gray-800">
+          {/* Home Button */}
+          <button
+            onClick={() => {
+              scrollToTop();
+              setIsMenuOpen(false);
+            }}
+            className="w-full flex items-center px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-800"
+          >
+            <Home className="h-5 w-5 mr-2" />
+            <span>Home</span>
+          </button>
+
           {/* Services Dropdown */}
           <div className="relative">
             <button
