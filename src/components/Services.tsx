@@ -13,8 +13,8 @@ export function Services() {
       <div className="absolute inset-0 bg-gray-900">
         <div className="absolute inset-0" style={{
           backgroundImage: `
-            linear-gradient(to right, rgba(59, 130, 246, 0.3) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(59, 130, 246, 0.3) 1px, transparent 1px)
+            linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px)
           `,
           backgroundSize: '40px 40px',
         }}>
