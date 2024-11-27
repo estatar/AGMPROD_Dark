@@ -17,13 +17,20 @@ export function Navigation({ isMenuOpen, setIsMenuOpen, scrollToSection }: Navig
     { id: 'wholesale-distribution', label: 'Wholesale & Distribution' },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="fixed w-full bg-gray-900/90 backdrop-blur-sm z-50 shadow-lg border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0 font-bold text-xl text-blue-400">
+          <button 
+            onClick={scrollToTop}
+            className="flex-shrink-0 font-bold text-xl text-blue-400 hover:text-blue-300 transition-colors duration-200"
+          >
             AGMPROD
-          </div>
+          </button>
           
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
