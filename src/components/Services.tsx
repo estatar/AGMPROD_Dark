@@ -2,14 +2,19 @@ import React from 'react';
 import { Globe2, ShieldCheck, Truck, LineChart, Store } from 'lucide-react';
 
 export function Services() {
+  const cardStyle = {
+    background: 'linear-gradient(145deg, rgba(31, 41, 55, 0.4), rgba(17, 24, 39, 0.7))',
+    backdropFilter: 'blur(8px)',
+  };
+
   return (
     <section className="relative py-20 px-4 md:px-8">
       {/* Grid Background */}
       <div className="absolute inset-0 bg-gray-900">
         <div className="absolute inset-0" style={{
           backgroundImage: `
-            linear-gradient(to right, rgba(59, 130, 246, 0.2) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(59, 130, 246, 0.2) 1px, transparent 1px)
+            linear-gradient(to right, rgba(59, 130, 246, 0.3) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(59, 130, 246, 0.3) 1px, transparent 1px)
           `,
           backgroundSize: '40px 40px',
         }}>
@@ -21,7 +26,11 @@ export function Services() {
       <div className="relative max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Global Product Sourcing */}
-          <div id="global-sourcing" className="group bg-gray-800/30 backdrop-blur-sm rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-gray-700/30 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl">
+          <div 
+            id="global-sourcing" 
+            className="group rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-blue-500/20 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl"
+            style={cardStyle}
+          >
             <div className="flex items-center mb-6">
               <Globe2 className="w-8 h-8 text-blue-400 mr-4 group-hover:text-blue-300" />
               <h2 className="text-xl font-bold text-gray-100 group-hover:text-blue-300">Global Product Sourcing</h2>
@@ -37,7 +46,11 @@ export function Services() {
           </div>
 
           {/* Regulatory Compliance */}
-          <div id="regulatory-compliance" className="group bg-gray-800/30 backdrop-blur-sm rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-gray-700/30 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl">
+          <div 
+            id="regulatory-compliance" 
+            className="group rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-blue-500/20 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl"
+            style={cardStyle}
+          >
             <div className="flex items-center mb-6">
               <ShieldCheck className="w-8 h-8 text-blue-400 mr-4 group-hover:text-blue-300" />
               <h2 className="text-xl font-bold text-gray-100 group-hover:text-blue-300">Regulatory Compliance and Documentation</h2>
@@ -53,7 +66,11 @@ export function Services() {
           </div>
 
           {/* Logistics Management */}
-          <div id="logistics-management" className="group bg-gray-800/30 backdrop-blur-sm rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-gray-700/30 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl">
+          <div 
+            id="logistics-management" 
+            className="group rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-blue-500/20 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl"
+            style={cardStyle}
+          >
             <div className="flex items-center mb-6">
               <Truck className="w-8 h-8 text-blue-400 mr-4 group-hover:text-blue-300" />
               <h2 className="text-xl font-bold text-gray-100 group-hover:text-blue-300">International Logistics Management</h2>
@@ -69,7 +86,11 @@ export function Services() {
           </div>
 
           {/* Market Entry Strategies */}
-          <div id="market-entry" className="group bg-gray-800/30 backdrop-blur-sm rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-gray-700/30 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl">
+          <div 
+            id="market-entry" 
+            className="group rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-blue-500/20 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl"
+            style={cardStyle}
+          >
             <div className="flex items-center mb-6">
               <LineChart className="w-8 h-8 text-blue-400 mr-4 group-hover:text-blue-300" />
               <h2 className="text-xl font-bold text-gray-100 group-hover:text-blue-300">Market Entry Strategies</h2>
@@ -85,7 +106,11 @@ export function Services() {
           </div>
 
           {/* Wholesale and Distribution */}
-          <div id="wholesale-distribution" className="group bg-gray-800/30 backdrop-blur-sm rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-gray-700/30 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl">
+          <div 
+            id="wholesale-distribution" 
+            className="group rounded-xl shadow-lg p-8 transform hover:scale-105 transition-all duration-300 scroll-mt-20 border border-blue-500/20 hover:border-blue-400/50 hover:shadow-blue-400/20 hover:shadow-xl"
+            style={cardStyle}
+          >
             <div className="flex items-center mb-6">
               <Store className="w-8 h-8 text-blue-400 mr-4 group-hover:text-blue-300" />
               <h2 className="text-xl font-bold text-gray-100 group-hover:text-blue-300">Wholesale and Distribution</h2>
